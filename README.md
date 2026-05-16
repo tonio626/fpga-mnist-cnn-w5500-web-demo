@@ -369,6 +369,26 @@ http://127.0.0.1:8000
 Draw a digit and press **Predict**.
 
 ---
+## Local Web Demo
+
+![Local Web Demo](docs/images/web_demo.png)
+
+The project also includes a local browser-based demo. The user can draw a handwritten digit on an HTML canvas. The local Flask backend converts the drawing into a 14×14 MNIST-like grayscale frame, sends it to the FPGA through UDP, waits for the FPGA response, and displays the predicted digit directly in the web page.
+
+The screenshot above shows a handwritten digit classified by the FPGA CNN accelerator through the complete end-to-end flow:
+
+```text
+Browser Canvas
+→ Flask local server
+→ UDP packet
+→ W5500 Ethernet module
+→ MicroBlaze firmware
+→ Shared BRAM
+→ Vitis HLS CNN accelerator
+→ UDP response
+→ Browser result
+
+---
 
 ## UART Debug Commands
 
