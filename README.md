@@ -370,33 +370,6 @@ Draw a digit and press **Predict**.
 
 ---
 
-## Run the Dataset UDP Test Script
-
-The script in `scripts/` sends images from `test_samples.npz` to the FPGA.
-
-Example:
-
-```bash
-python3 scripts/send_mnist_udp_mac_debug.py \
-  --fpga-ip 192.168.8.50 \
-  --npz colab/test_samples.npz \
-  --start-index 0 \
-  --count 100 \
-  --delay-ms 300 \
-  --scale-mode auto
-```
-
-A validated run produced:
-
-```text
-96/100 correct predictions
-Accuracy: 96%
-```
-
-The wrong predictions were limited to a few samples of digit `9`, which is consistent with model/quantization accuracy rather than Ethernet or BRAM errors.
-
----
-
 ## UART Debug Commands
 
 The Vitis firmware supports manual UART commands:
