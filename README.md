@@ -151,7 +151,7 @@ The shared BRAM stores the packed 14×14 input image. MicroBlaze writes the fram
 This repository includes a cleaned Vivado project source folder:
 
 ```text
-vivado/project/CNN_on_FPGA_pj/
+vivado/CNN_on_FPGA_pj/
 ```
 
 To open it:
@@ -161,7 +161,7 @@ To open it:
 3. Open:
 
 ```text
-vivado/project/CNN_on_FPGA_pj/CNN_on_FPGA_pj.xpr
+vivado/CNN_on_FPGA_pj/CNN_on_FPGA_pj.xpr
 ```
 
 4. Open the Block Design:
