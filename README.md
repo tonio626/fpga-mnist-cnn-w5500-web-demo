@@ -136,16 +136,9 @@ The shared BRAM stores the packed 14×14 input image. MicroBlaze writes the fram
 │   └── src/
 │       └── app_main.c
 ├── vivado/
-│   ├── constraints/
-│   │   └── Constraints.xdc
-│   ├── rtl/
-│   │   └── cnn_bram_portb32_bridge.v
-│   ├── block_design/
-│   │   └── CNN_on_FPGA_BD/
-│   └── project/
-│       └── CNN_on_FPGA_pj/
-│           ├── CNN_on_FPGA_pj.xpr
-│           └── CNN_on_FPGA_pj.srcs/
+│   └── CNN_on_FPGA_pj/
+│       ├── CNN_on_FPGA_pj.xpr
+│       └── CNN_on_FPGA_pj.srcs/
 └── web_app/
     ├── app.py
     └── requirements.txt
