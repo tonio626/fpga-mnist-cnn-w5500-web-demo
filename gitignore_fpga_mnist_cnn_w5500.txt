@@ -1,0 +1,76 @@
+.DS_Store
+__MACOSX/
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# Vivado logs/temp
+*.jou
+*.log
+*.str
+*.dmp
+*.wdb
+*.wcfg
+*.rpt
+*.pb
+
+# Vivado generated folders
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.tmp/
+.Xil/
+
+# Vitis / Vitis HLS generated folders
+build/
+Debug/
+Release/
+_system/
+.ide/
+.metadata/
+solution*/
+impl/
+syn/
+csim/
+cosim/
+.vitis_hls/
+
+# Generated binaries/artifacts
+*.elf
+*.map
+*.o
+*.d
+*.bit
+*.ltx
+*.xsa
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Keep important source files
+!*.xpr
+!*.xdc
+!*.tcl
+!*.bd
+!*.xci
+!*.v
+!*.sv
+!*.cpp
+!*.c
+!*.h
+!*.py
+!*.ipynb
+!*.md
+!*.png
